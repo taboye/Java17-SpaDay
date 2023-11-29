@@ -41,6 +41,8 @@ public class SpaDayController {
                 "<select name = 'manipedi'>" +
                 "<option value = 'manicure'>Manicure</option>" +
                 "<option value = 'pedicure'>Pedicure</option>" +
+                //add both option (bonus mission 2)
+                "<option value = 'both'>Both</option>" +
                 "</select><br>" +
                 "<input type = 'submit' value = 'Submit'>" +
                 "</form>";
@@ -68,6 +70,16 @@ public class SpaDayController {
         model.addAttribute("name", name);
         model.addAttribute("skintype",skintype);
         model.addAttribute("manipedi",manipedi);
+
+        //Bonus Mission 1(footer)
+        ArrayList<String> colorChoices = new ArrayList<>();
+        colorChoices.add("red");
+        colorChoices.add("blue");
+        colorChoices.add("lightblue");
+        colorChoices.add("green");
+        colorChoices.add("purple");
+        colorChoices.add("orange");
+        model.addAttribute("colorChoices", colorChoices);
 
         return "menu";
     }

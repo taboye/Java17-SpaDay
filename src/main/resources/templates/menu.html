@@ -37,5 +37,14 @@
             <p th:replace="~{fragments::pedicureDescription}"></p>
         </div>
     </div>
+<!-- Bonus Mission 1 (footer)-->
+    <footer>
+        <div>Ask new color</div>
+        <div id="color-collection">
+            <th:block th:each="color: ${colorChoices}">
+                <div class="color-sample" th:style="'background: '+${color}"></div>
+            </th:block>
+        </div>
+    </footer>
 </body>
 </html>
