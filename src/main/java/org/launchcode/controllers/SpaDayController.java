@@ -27,7 +27,8 @@ public class SpaDayController {
     @GetMapping(value="")
     @ResponseBody
     public String customerForm () {
-        String html = "<form method = 'post'>" +
+        //String html = "<form method = 'post'>" +
+        String html = "<form action='/menu' method = 'post'>" +
                 "Name: <br>" +
                 "<input type = 'text' name = 'name'>" +
                 "<br>Skin type: <br>" +
@@ -48,8 +49,8 @@ public class SpaDayController {
                 "</form>";
         return html;
     }
-
-    @PostMapping(value="")
+// add /menu router inside value=""( bonus mission 3) then add action method on  the top
+    @PostMapping(value="/menu")
     public String spaMenu(@RequestParam String name, @RequestParam String skintype, @RequestParam String manipedi, Model model) {
 
         ArrayList<String> facials = new ArrayList<>();
