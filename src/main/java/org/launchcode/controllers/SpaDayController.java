@@ -62,6 +62,12 @@ public class SpaDayController {
                 appropriateFacials.add(facials.get(i));
             }
         }
+        //use Thymeleaf to display the appropriate facial treatments (stored in the ArrayList, appropriateFacials)!
+        model.addAttribute("appropriateFacials",appropriateFacials);
+
+        model.addAttribute("name", name);
+        model.addAttribute("skintype",skintype);
+        model.addAttribute("manipedi",manipedi);
 
         return "menu";
     }
