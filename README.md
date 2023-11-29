@@ -56,6 +56,6 @@ Form completed with the name, &ldquo;Yolanda&rdquo;, combination skin and a pref
 Profile showing Yolanda&rsquo;s information, recommended facial treatments, and pedicure description.
 
 Bonus Mission
-Modify styles.css to get some CSS practice! Try add a footer with square shaped div elements. Each square should be a different color for different available nail polishes.
-Modify the form to allow the user to select either a manicure or pedicure or both. If the user selects both, display both the manicure and pedicure descriptions on the Spa Menu page.
-Work with routes and paths to display the spa menu page on a separate route from the form.
+1.Modify styles.css to get some CSS practice! Try add a footer with square shaped div elements. Each square should be a different color for different available nail polishes.
+2.Modify the form to allow the user to select either a manicure or pedicure or both. If the user selects both, display both the manicure and pedicure descriptions on the Spa Menu page.
+3.Work with routes and paths to display the spa menu page on a separate route from the form.
