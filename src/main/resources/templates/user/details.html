@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/> <!-- Note the closing '/' character -->
+    <title>User Details</title>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+    <!--Bonus mission 1-->
+    <p>User: <span th:text="${user.username}"></span></p>
+    <p>Email: <span th:text="${user.email}"></span></p>
+    <!--Bonus mission 2-->
+    <hr/>
+    <small>User since <span th:text="${user.dateRegistered}"></span></small>
+
+</body>
+</html>
